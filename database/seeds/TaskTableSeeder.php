@@ -23,5 +23,18 @@ class TaskTableSeeder extends Seeder
     	]);
     	$items->save();
 
+        $items = new Task([
+            'user_id' => 2,
+            'task'=>'Do cleaning'
+        ]);
+        $items->save();
+
+        $items = new Task([
+            'user_id' => 2,
+            'task'=>'Order food'
+        ]);
+        $items->save();
+
+
     }
 }

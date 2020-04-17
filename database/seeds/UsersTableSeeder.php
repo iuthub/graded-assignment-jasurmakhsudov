@@ -18,5 +18,13 @@ class UsersTableSeeder extends Seeder
 
         ]);
         $users->save();
+
+        $users = new User([
+            'name'=>'Rustam',
+            'email'=>'r.ahmedov@student.inha.uz',
+            'password'=>Hash::make('rustam')
+
+        ]);
+        $users->save();
     }
 }
